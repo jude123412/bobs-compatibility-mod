@@ -2,9 +2,11 @@ if type(mods["mech-armor"]) then
 
     -- This updates mech armor equipment_grid to be larger than bob's tier 5 power armor
     -- Also re-orders mech armor recipe after mk5 power armor
-    data.raw["equipment-grid"]["huge-equipment-grid"].width = 12
-    data.raw["equipment-grid"]["huge-equipment-grid"].height = 13
-    data.raw["armor"]["mech-armor"].order = "i[mech-armor]"
+    if data.raw.item["mech-armor"] then
+        data.raw["equipment-grid"]["huge-equipment-grid"].width = 12
+        data.raw["equipment-grid"]["huge-equipment-grid"].height = 13
+        data.raw["armor"]["mech-armor"].order = "i[mech-armor]"
+    end
 
     if data.raw.technology["mech-armor"] then
         bobmods.lib.tech.add_prerequisite("mech-armor", "bob-god-module"   )

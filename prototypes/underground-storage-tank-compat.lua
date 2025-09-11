@@ -1,7 +1,9 @@
 if type(mods["underground-storage-tank"]) then
 
-    data.raw["item"]["underground-storage-tank"].subgroup = "bob-storage-tank"
-    data.raw["item"]["underground-storage-tank"].order = "b[fluid]-a[storage-tank-4b]"
+    if data.raw.item["underground-storage-tank"] then
+        data.raw["item"]["underground-storage-tank"].subgroup = "bob-storage-tank"
+        data.raw["item"]["underground-storage-tank"].order = "b[fluid]-a[storage-tank-4b]"
+    end
 
     if data.raw.technology["underground-storage-tank"] then
         bobmods.lib.tech.remove_prerequisite("underground-storage-tank", "chemical-science-pack")
