@@ -1,9 +1,16 @@
-if type(mods["Repair_Turret"]) then
+if mods["Repair_Turret"] then
+
     if data.raw.technology["repair-turret"] then
-        bobmods.lib.tech.add_prerequisite("repair-turret", "bob-electronics" )
+        
+        -- Requires Bob's Electronics to be installed
+        if mods["bobelectronics"] then 
+            bobmods.lib.tech.add_prerequisite("repair-turret", "bob-electronics" )
+        end
+
         bobmods.lib.tech.add_prerequisite("repair-turret", "steel-processing")
     end
  
+    -- These fix some missing research requirements
     if data.raw.technology["repair-turret-construction"] then
         bobmods.lib.tech.add_prerequisite("repair-turret-construction", "chemical-science-pack")
     end

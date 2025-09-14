@@ -1,5 +1,10 @@
-if type(mods["ammo-loader"]) then
+if mods["ammo-loader"] then
+
     if data.raw.technology["ammo-loader-tech-loader-chest"] then
-        bobmods.lib.tech.add_prerequisite("ammo-loader-tech-loader-chest", "bob-electronics")
+        
+        -- Requires Bob's Electronics to be installed
+        if mods["bobelectronics"] then
+            bobmods.lib.tech.add_prerequisite("ammo-loader-tech-loader-chest", "bob-electronics")
+        end
     end
 end
