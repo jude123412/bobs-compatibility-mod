@@ -26,6 +26,8 @@ if mods["Wind-Turbines-relaunched"] then
             bobmods.lib.tech.add_prerequisite("texugo-wind-turbine4", "bob-nitinol-processing")
         end
 
+
+        bobmods.lib.tech.add_prerequisite("texugo-wind-turbine4", "utility-science-pack")
         bobmods.lib.tech.add_prerequisite("texugo-wind-turbine4", "low-density-structure")
         bobmods.lib.tech.add_prerequisite("texugo-wind-turbine4", "speed-module")
     end
