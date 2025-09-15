@@ -2,7 +2,8 @@
 Version: 2.0.3
 Date: 14. 09. 2025
   Changes:
-    - fix missing research prerequisite for ammo loader artillery upgrade
+    - fix missing research prerequisite for ammo loader: artillery
+    - fix missing research prerequisite for logistics warehousing 2
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.2
 Date: 14. 09. 2025
