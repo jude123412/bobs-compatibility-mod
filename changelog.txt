@@ -3,6 +3,8 @@ Version: 2.0.5
 Date: 18. 09. 2025
   New Features:
     - add compatibility for Text Plates mod
+  Bugfixes:
+    - fix missing research prerequisite for nano explosives
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.4
 Date: 15. 09. 2025

@@ -1,5 +1,9 @@
 if mods["Nanobots2"] then
 
+    if data.raw.technology["nanobots-cliff"] then
+        bobmods.lib.tech.add_prerequisite("nanobots-cliff", "logistic-science-pack")
+    end
+
     -- Requires Bob's Electronics to be installed
     if mods["bobelectronics"] then 
         if data.raw.technology["nanobots"] then
