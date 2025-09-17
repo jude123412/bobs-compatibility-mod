@@ -1,6 +1,6 @@
 {
   "name": "bobcompat",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "factorio_version": "2.0",
   "title": "Bob's Compatibility mod",
   "author": "Jude",
@@ -34,7 +34,7 @@
     "? big-brother >= 2.0.0",
     "? underground-storage-tank >= 3.0.0",
     "? ShockTurret3 >= 0.1.91",
-    
+    "? textplates >= 0.7.0",
     "! space-age"
   ],
   "description": "Requires Bob's functions library mod.\n\nThis mod adds bob's mods compatibility to many other mods.\n\nThe mods that are marked as optional have bob's mods compatibility.\n\n Now with full customizability for what bob's mods you want installed."
