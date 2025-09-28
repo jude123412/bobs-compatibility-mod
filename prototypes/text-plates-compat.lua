@@ -11,16 +11,28 @@ if mods["textplates"] then
         -- Requires Bob's Plates to be installed
         if data.raw.recipe["textplate-small-gold"] then
                 if data.raw.item["bob-gold-plate"] then
-                        bobmods.lib.recipe.remove_ingredient("textplate-small-gold", "sulfur")
-                        bobmods.lib.recipe.add_ingredient("textplate-small-gold", {type = "item", name = "bob-gold-plate", amount = 1})
+                        bobmods.lib.recipe.replace_ingredient("textplate-small-gold", "sulfur", "bob-gold-plate")
                 end
         end
 
         -- Requires Bob's Plates to be installed
         if data.raw.recipe["textplate-large-gold"] then
                 if data.raw.item["bob-gold-plate"] then
-                bobmods.lib.recipe.remove_ingredient("textplate-large-gold", "sulfur")
-                bobmods.lib.recipe.add_ingredient("textplate-large-gold", {type = "item", name = "bob-gold-plate", amount = 4})
+                        bobmods.lib.recipe.replace_ingredient("textplate-large-gold", "sulfur", "bob-gold-plate")
+                end
+        end
+
+        -- Requires Bob's Plates to be installed
+        if data.raw.recipe["textplate-small-glass"] then
+                if data.raw.item["bob-glass"] then
+                        bobmods.lib.recipe.replace_ingredient("textplate-small-glass", "stone", "bob-glass")
+                end
+        end
+
+        -- Requires Bob's Plates to be installed
+        if data.raw.recipe["textplate-large-glass"] then
+                if data.raw.item["bob-glass"] then
+                        bobmods.lib.recipe.replace_ingredient("textplate-large-glass", "stone", "bob-glass")
                 end
         end
 end

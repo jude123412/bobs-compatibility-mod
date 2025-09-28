@@ -1,6 +1,6 @@
 {
   "name": "bobcompat",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "factorio_version": "2.0",
   "title": "Bob's Compatibility mod",
   "author": "Jude",
@@ -35,6 +35,7 @@
     "? underground-storage-tank >= 3.0.0",
     "? ShockTurret3 >= 0.1.91",
     "? textplates >= 0.7.0",
+    "? Nuclear Fuel >= 1.2.0",
     
     "! space-age"
   ],
