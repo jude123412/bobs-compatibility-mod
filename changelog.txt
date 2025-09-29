@@ -1,4 +1,18 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.7
+Date: 29. 09. 2025
+  Changes:
+    - Change Mox Fuel Recipe Icon
+    - Change Mox Fuel Research Icon
+  Balances:
+    - Balance Breeder Fuel Cell Plutonium amount to 3 instead of 1
+    - Balance Breeder Fuel Cell Uranium amount to 17 instead of 19
+    - Balance Uranium Reprocessing Plutonium output probability to 10% instead of 1%
+  Bugfixes:
+    - fix missing research prerequisite for Mox Fuel Cells
+    - fix missing research prerequisite for Breeder Fuel Cells
+    - fix wrong color for Breeder Fuel research and recipe icon
+---------------------------------------------------------------------------------------------------
 Version: 2.0.6
 Date: 28. 09. 2025
   New Features:
