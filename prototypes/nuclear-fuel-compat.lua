@@ -23,9 +23,13 @@ if mods["Nuclear Fuel"] then
             data.raw.recipe["mox-fuel-cell"].subgroup = "bob-fuel-cells"
             data.raw.recipe["mox-fuel-cell"].order = "r[uranium-processing]-db[mox-fuel-cell]"
         end
+        if data.raw.recipe["breeder-fuel-cell"] then
+            data.raw.recipe["breeder-fuel-cell"].subgroup = "bob-fuel-cells"
+            data.raw.recipe["breeder-fuel-cell"].order = "r[uranium-processing]-dc[breeder-fuel-cell]"
+        end
         if data.raw.recipe["breeder-fuel-reprocessing"] then
             data.raw.recipe["breeder-fuel-reprocessing"].subgroup = "bob-fuel-cells"
-            data.raw.recipe["breeder-fuel-reprocessing"].order = "r[uranium-processing]-dc[mox-fuel-cell]"
+            data.raw.recipe["breeder-fuel-reprocessing"].order = "r[uranium-processing]-dd[breeder-fuel-reprocessing]"
         end
         if data.raw.recipe["nuclear-fuel-pu"] then
             data.raw.recipe["nuclear-fuel-pu"].subgroup = "bob-chemical-fuels"
